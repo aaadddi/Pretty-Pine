@@ -76,16 +76,6 @@ export const ControlPanel = ({ settings, onSettingsChange }: ControlPanelProps) 
 
   return (
     <div className="w-80 bg-card border-r border-border flex flex-col h-full">
-      <div className="p-6 border-b border-border">
-        <Button
-          variant="ghost"
-          onClick={() => setIsCollapsed(!isCollapsed)}
-          className="w-full justify-between p-0 h-auto"
-        >
-          <h2 className="text-lg font-semibold">Controls</h2>
-          <ChevronDown className={`w-4 h-4 transition-transform ${isCollapsed ? 'rotate-180' : ''}`} />
-        </Button>
-      </div>
 
       <div className={`flex-1 overflow-y-auto transition-all duration-300 ${isCollapsed ? 'h-0 overflow-hidden' : 'min-h-0'}`}>
         <div className="p-6 space-y-4">
